@@ -1,0 +1,151 @@
+html * {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+#wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto  minmax(0, 1fr);
+  }
+
+main {
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+
+body {
+  min-width: 320px;
+  font-family: $font-main;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $gray;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0 0 10px;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+input {
+  border: 0;
+  outline: 0;
+
+  &[type="text"],
+  &[type="password"],
+  &[type="email"],
+  &[type="search"] {
+    -webkit-appearance: none;
+  }
+}
+
+button {
+  border: 0;
+  outline: 0;
+  padding: 0;
+  background-color: unset;
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+  -webkit-appearance: none;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1250px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+
+}
+
+[class^="col-"] {
+    margin-bottom: 30px;
+    padding: 0 15px;
+
+}
+
+.col-3 {
+  @media (min-width: $breakpoint-sm)  {
+    width: 33.33%;
+  }
+
+  @media (min-width: $breakpoint-md)  {
+    width: 25%;
+  }
+}
+
+.col-4 {
+  width: 100%;
+
+  @media (min-width: $breakpoint-sm)  {
+    width: 50%;
+  }
+
+  @media (min-width: $breakpoint-md)  {
+    width: calc(100% / 3);
+  }
+}
+
+.col-6 {
+  width: 100%;
+
+  @media (min-width: $breakpoint-sm) {
+    width: 50%;
+  }
+}
+
+.d-flex {
+  display: flex;
+}
+

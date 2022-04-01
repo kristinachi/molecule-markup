@@ -1,0 +1,26 @@
+.label {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: $gray;
+  border-radius: 100px;
+  border: 2px solid;
+  padding: 0 26px;
+
+  &.label--orange {
+    background-color: rgba(255, 193, 71, 0.6);
+    border-color: $orange;
+  }
+
+  &.label--green {
+    background-color: rgba(151, 231, 71, 0.6);
+    border-color: $green;
+  }
+
+  &.label--purple {
+    background-color: rgba(121, 78, 255, 0.8);
+    border-color: $primary;
+    color: $white;
+  }
+}

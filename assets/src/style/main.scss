@@ -1,0 +1,18 @@
+@import "utils/variables";
+@import "utils/normalize";
+@import "utils/icomoon/style.scss";
+
+@import "elements/scroll";
+@import "elements/button";
+@import "elements/newscard";
+@import "elements/slider";
+@import "elements/search";
+@import "elements/label";
+@import "elements/testimonials";
+
+@import "fonts";
+
+@import "components/header";
+@import "components/base";
+@import "components/page";
+@import "components/footer";

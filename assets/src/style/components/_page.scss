@@ -1,0 +1,438 @@
+.background {
+  background-color: $gray;
+
+  &.background--light {
+    background-color: $lightgray;
+  }
+
+  &.background--purple {
+    background-color: $primary;
+  }
+}
+
+.template-section {
+  display: block;
+  background: url(../img/windows.png);
+  background-size: 600px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  min-height: 710px;
+  padding-top: 230px;
+}
+
+.template {
+  max-width: 576px;
+  color: $white;
+
+  &__title {
+    font-size: 38px;
+    line-height: 44px;
+    margin-bottom: 10px;
+  }
+
+  &__accent {
+    color: $primary;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 28px;
+  }
+
+  &__search {
+    margin-bottom: 16px;
+  }
+
+  &__warning {
+    font-size: 12px;
+    line-height: 18px;
+
+    a {
+      padding-left: 20px;
+      color: $primary;
+    }
+  }
+}
+
+.companies {
+  padding-bottom: 40px;
+  &__title {
+    font-size: 18px;
+    line-height: 28px;
+    color: $white;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 -24px;
+
+    li {
+      padding: 0 24px;
+      max-width: 160px;
+    }
+  }
+}
+
+.feature-section {
+  padding: 128px 0;
+  display: block;
+  background: url(../img/feature.png);
+  background-size: 620px;
+  background-repeat: no-repeat;
+  background-position: left -10% center;
+  min-height: 720px;
+}
+
+.feature {
+  max-width: 600px;
+  margin-left: auto;
+
+  &__label {
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 16px;
+  }
+
+  &__accent {
+    color: $orange;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+.block {
+  display: flex;
+  gap: 16px;
+
+  &__img {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    color: $orange;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 12px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  &__subtext {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__percent {
+    color: $green;
+    font-size: 48px;
+    line-height: 58px;
+    margin-bottom: 10px;
+  }
+}
+
+.status-section {
+  padding: 128px 0;
+}
+
+.status {
+  display: flex;
+  gap: 116px;
+
+  > div {
+    width: 50%;
+  }
+
+  &__label {
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  &__accent {
+    color: $green;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 30px;
+  }
+}
+
+.team-section {
+  display: block;
+  background: url(../img/people.png);
+  background-size: 560px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  min-height: 720px;
+  padding-top: 240px;
+}
+
+.team {
+  max-width: 600px;
+  margin-right: auto;
+
+  &__label {
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 16px;
+  }
+
+  &__accent {
+    color: $primary;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 30px;
+  }
+}
+
+.info-section {
+  padding: 128px 0;
+}
+
+.info {
+  max-width: 768px;
+  margin: auto;
+  color: $white;
+  text-align: center;
+
+  &__img {
+    margin: 0 auto 20px;
+    width: 160px;
+    height: 160px;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 14px;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+}
+
+.process-section {
+  padding: 128px 0 110px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+}
+
+.process {
+  max-width: 600px;
+
+  &__label {
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 48px;
+  }
+}
+
+.process-steps {
+  max-width: 600px;
+
+  &__title {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 12px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 16px;
+    padding-left: 40px;
+  }
+
+  li {
+    display: flex;
+    margin-bottom: 40px;
+    position: relative;
+
+    &:not(:last-child):after {
+      display: block;
+      content: "";
+      background: rgba(0, 0, 0, 0.15);
+      width: 2px;
+      height: 74px;
+      position: absolute;
+      top: 64%;
+      left: 6%;
+    }
+  }
+
+  &__square {
+    height: 62px;
+    width: 62px;
+    background-color: $orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    i {
+      color: $white;
+      font-size: 24px;
+    }
+  }
+}
+
+.slider-section {
+  padding: 128px 0;
+}
+
+.attention-section {
+  padding: 64px 0;
+}
+
+.attention {
+  background-color: $white;
+  border-radius: 48px;
+  padding: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  > div {
+    max-width: 540px;
+  }
+
+  &__title {
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__search {
+    margin-bottom: 16px;
+  }
+
+  &__warning {
+    font-size: 12px;
+    line-height: 18px;
+
+    a {
+      color: $primary;
+    }
+  }
+}
+
+.new-section {
+  padding: 128px 0;
+}
+
+.news {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+
+  &__label {
+    margin-bottom: 32px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 12px;
+  }
+
+  &__accent {
+    color: $primary;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  &__btn {
+    align-self: flex-end;
+  }
+}
+
+.ready-section {
+  padding: 64px 0;
+}
+
+.ready {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $white;
+
+  &__title {
+    font-size: 56px;
+    line-height: 62px;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-size: 18px;
+line-height: 28px;
+  }
+}

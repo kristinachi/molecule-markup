@@ -1,0 +1,57 @@
+.btn {
+  display: inline-block;
+  min-width: 94px;
+  border-radius: 6px;
+  color: $white;
+  text-align: center;
+  padding: 11px 14px;
+  transition: all 0.3s ease;
+  border: 1px solid;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.05);
+
+  &:hover {
+    transition: all 0.3s ease;
+  }
+
+  &.primary-btn {
+    background-color: $gray;
+    border-color: $gray;
+
+    &:hover {
+      background-color: transparent;
+      color: $gray;
+    }
+
+    &.outline-btn {
+      background-color: transparent;
+      color: $gray;
+
+      &:hover {
+        background-color: $gray;
+        color: $gray;
+      }
+    }
+  }
+
+  &.light-btn {
+    background-color: $white;
+    border-color: $white;
+    color: $gray;
+    padding: 10px 14px;
+
+    &:hover {
+      background-color: transparent;
+      color: $white;
+    }
+  }
+
+  &.purple-btn {
+    background-color: $primary;
+    border-color: $primary;
+
+    &:hover {
+      background-color: transparent;
+      color: $primary;
+    }
+  }
+}
